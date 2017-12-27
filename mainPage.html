@@ -1,0 +1,232 @@
+﻿<head>
+	<title>常用网站</title>
+	<style>
+	.type{color:#01814A}
+	.Notes{color:#9D9D9D}
+	</style>
+</head>
+	
+<body>
+	<!--百度搜索-->
+	<center>
+		<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+			<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+			<a href="https://www.baidu.com/" target="_blank">
+				<img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="Baidu" align="bottom" border="0">
+			</a>
+			<input type="text"  onfocus="checkHttps" name="word"  size="30">
+			<input type="submit"value="百度搜索">
+		</form>
+	</center>
+	<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+	<script>
+		function checkHttps () {
+			BaiduHttps.useHttps();    
+		};
+		function baiduWithHttps (formname) {
+			var data = BaiduHttps.useHttps();
+			if (data.s === 0) {
+				return true;
+			}
+			else {
+				formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+				return true;
+			}
+		};
+	</script>
+	<!--百度搜索end-->
+	<!-- <IFRAME marginWidth="0" marginHeight="0" src="http://fanyi.baidu.com/?aldtype=16047#auto/zh/" frameBorder="0" width="100%" scrolling=auto height="350"></IFRAME> -->
+	<!--
+	SRC=URI 嵌入式柜架的页面文件路径 
+	NAME=CDATA 嵌入式柜架的名字 
+	LONGDESC=URI 描述 
+	WIDTH=Length 宽度 
+	HEIGHT=Length 高度 
+	ALIGN=[ top | middle | bottom | left | right ] 
+	对齐方式 
+	FRAMEBORDER=[ 1 | 0 ] 柜架边框 
+	MARGINWIDTH=Pixels 左右空出宽度 
+	MARGINHEIGHT=Pixels 上下空出的高度 
+	SCROLLING=[ yes | no | auto ] 流动条(yes强制显示|no永不显示|auto自动)-->
+	<table width="900" border="0" align="center" class="Notes">
+		<tr>
+			<td ><font size="1">v动词</font></td>
+			<td ><font size="1">vi不及物动词</font></td>
+			<td ><font size="1">vt及物动词</font></td>
+			<td ><font size="1">n名词</font></td>
+			<td ><font size="1">adj形容词</font></td>
+			<td ><font size="1">adv副词</font></td>
+			<td ><font size="1">pron代词</font></td>
+			<td ><font size="1">num数词</font></td>
+			<td ><font size="1">art冠词</font></td>
+			<td ><font size="1">prep介词</font></td>
+			<td ><font size="1">conj连词</font></td>
+			<td ><font size="1">interj感叹词</font></td>
+		</tr>
+	</table>
+	
+	<!-- 11 列-->
+	<table width="900" border="0" align="center" cellspacing="0" cellpadding="0" style="border:1px #ffffff solid;">
+		
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type">常用</div></td>
+			<td width="90" height="20" noWrap><a href="http://www.cnblogs.com/kingBook"> 博客园 </a></td>
+			<td width="90" height="20" noWrap><a href="http://fanyi.baidu.com/"> 百度翻译 </a></td>
+			<td width="90" height="20" noWrap><a href="http://translate.google.cn/"> 谷歌翻译 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.douyu.com/"> 斗鱼 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.huya.com/"> 虎牙 </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+		</tr>
+		
+		
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type">休闲</div></td>
+			<td width="90" height="20" noWrap><a href="http://www.youku.com"> 优酷 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.iqiyi.com/"> 爱奇艺 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.pptv.com/"> pptv </a></td>
+			<td width="90" height="20" noWrap><a href="http://v.qq.com/"> 腾讯视频 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.77kp.com/"> 琪琪电影 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.acfun.cn/"> acfun </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.bilibili.com/"> bilibili </a></td>
+			<td width="90" height="20" noWrap noWrap><a href="http://www.xiami.com/radio?spm=a1z1s.6843761.226669510.5.H06NDw"> 虾米电台</a></td>
+			<td width="90" height="20" noWrap><a href="http://music.163.com/"> 网易云音乐 </a></td>
+		</tr>
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type"></div></td>
+			<td width="90" height="20" noWrap><a href="http://www.77ds.net/"> 七七电视 </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+		</tr>
+		
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type">AS3</div></td>
+			<td width="90" height="20" noWrap><a href="http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/swf/pdf/swf-file-format-spec.pdf"> swf格式 </a></td>
+			<td width="90" height="20" noWrap><a href="http://help.adobe.com/zh_CN/FlashPlatform/reference/actionscript/3/flash/desktop/package-detail.html"> AS3API </a></td>
+		</tr>
+		
+		
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type">Cocos2d</div></td>
+			<td width="90" height="20" noWrap><a href="http://cocos2d-x.org/"> cocos2d-x </a></td>
+			<td width="90" height="20" noWrap><a href="https://msdn.microsoft.com/zh-cn/library/3bstk3k5(v=vs.110).aspx"> C++参考 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.cocos.com/download"> ccc下载 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.cocos.com/docs/creator/"> ccc文档 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.cocos.com/docs/creator/api/index.html"> cccAPI </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.sdkbox.com/"> sdkbox </a></td>
+			<td width="90" height="20" noWrap><a href="http://forum.cocos.com/"> cocos社区 </a></td>
+		</tr>
+		
+		
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type">Unity</div></td>
+			<td width="90" height="20" noWrap><a href="http://dotween.demigiant.com/"> DoTween </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.androiddevtools.cn/"> 安卓SDK </a></td>
+			<td width="90" height="20" noWrap><a href="http://unity3d.com/cn"> unity中官方 </a></td>
+			<td width="90" height="20" noWrap><a href="http://docs.unity3d.com/ScriptReference/"> 官方API </a></td>
+			<td width="90" height="20" noWrap><a href="http://game.ceeger.com/Script/MonoBehaviour/MonoBehaviour.OnCollisionEnter.html"> 中文API </a></td>
+			<td width="90" height="20" noWrap><a href="http://forum.china.unity3d.com/forum.php"> unity论坛 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.ceeger.com/forum/"> 圣典论坛 </a></td>
+			<td width="90" height="20" noWrap><a href="http://wiki.ceeger.com/script:unity_api"> 圣典API </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.xuanyusong.com/"> 雨松Mono </a></td>
+		</tr>
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type"></div></td>
+            <td width="90" height="20" nowrap><a href="http://dotween.demigiant.com/documentation.php"> DoTween文档 </a></td>
+			<td width="90" height="20" noWrap><a href="https://msdn.microsoft.com/zh-cn/library/kx37x362"> C#文档 </a></td>
+			<td width="90" height="20" noWrap><a href="http://unity3d.com/cn/get-unity/download/archive"> unity下载 </a></td>
+			<td width="90" height="20" noWrap><a href="http://edu.51cto.com/lesson/id-46975.html"> uGUI教程 </a></td>
+			<td width="90" height="20" noWrap><a href="https://msdn.microsoft.com/zh-cn/library/system.math(v=vs.110).aspx"> .Net库 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.manew.com/"> manew </a></td>
+			<td width="90" height="20" noWrap><a href="https://forum.unity3d.com/"> unityForum </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.runoob.com/csharp/csharp-array.html"> C#语法 </a></td>
+			<td width="90" height="20" noWrap><a href="http://www.taidous.com/"> 泰斗社区 </a></td>
+		</tr>
+        <tr>
+			<td width="90" height="20" noWrap><div class="type"></div></td>
+            <td width="90" height="20" noWrap><a href="http://docs.manew.com/">manew手册</a></td>
+            <td width="90" height="20" noWrap><a href="http://docs.manew.com/csharp/">manew-C#</a></td>
+            <td width="90" height="20" noWrap><a href="http://docs.manew.com/Script/index.htm">manewAPI</a></td>
+            <td width="90" height="20" noWrap><a href="">  </a></td>
+            <td width="90" height="20" noWrap><a href="">  </a></td>
+            <td width="90" height="20" noWrap><a href="">  </a></td>
+            <td width="90" height="20" noWrap><a href="">  </a></td>
+            <td width="90" height="20" noWrap><a href="">  </a></td>
+            <td width="90" height="20" noWrap><a href="">  </a></td>
+        </tr>
+		
+		
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type">HTML5</div></td>
+			<td width="90" height="20" noWrap><a href="http://layabox.com/">layabox</a></td>
+			<td width="90" height="20" noWrap><a href="http://www.egret-labs.org/"> Egret </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+		</tr>
+		
+		
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type">素材</div></td>
+			<td width="90" height="20" noWrap><a href="http://www.2gei.com/music/list/fc/"> 爱给音效 </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+		</tr>
+		
+		
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type">其它</div></td>
+			<td width="90" height="20" noWrap><a href="http://up.51xxs.com/"> flash上传 </a></td>
+			<td width="90" height="20" noWrap><a href="http://news.qq.com/"> 腾讯新闻 </a></td>
+			<td width="90" height="20" noWrap><a href="http://zidian.aies.cn/"> 新华字典 </a></td>
+			<td width="90" height="20" noWrap><a href="http://cidian.aies.cn/"> 汉语词典 </a></td>
+			<td width="90" height="20" noWrap><a href=""></a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+		</tr>
+		
+		<tr align="center" valign="middle">
+			<td width="90" height="20" noWrap><div class="type"></div></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+			<td width="90" height="20" noWrap><a href="">  </a></td>
+		</tr>
+	</table>
+	
+</body>
+
+
+
+
+
